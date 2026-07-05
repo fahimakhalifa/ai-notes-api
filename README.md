@@ -84,6 +84,30 @@ An authenticated notes API with **text summarization** and **sentiment analysis*
 - Hugging Face `transformers` pipelines
 - Uvicorn
 
+## Project Structure
+
+```text
+ai-notes-api/
+├── app/
+│   ├── main.py              # FastAPI routes and application entry point
+│   ├── models.py            # SQLAlchemy database models
+│   ├── schemas.py           # Pydantic request/response schemas
+│   ├── database.py          # Database connection and session handling
+│   ├── oauth2.py            # JWT authentication logic
+│   ├── utils.py             # Password hashing and helper functions
+│   ├── summarizer.py        # Hugging Face summarization pipeline
+│   ├── sentiment.py         # Hugging Face sentiment analysis pipeline
+│   ├── jobs.py              # Background job execution
+│   └── config.py            # Environment-based settings
+├── alembic/                 # Database migrations
+├── tests/                   # Automated tests
+├── .github/workflows/       # GitHub Actions CI
+├── .env.example             # Example environment variables
+├── requirements.txt
+└── README.md
+```
+
+
 ## Quickstart (local)
 
 > Prereqs: Python 3.11, Postgres running locally
