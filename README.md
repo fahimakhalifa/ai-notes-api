@@ -1,5 +1,7 @@
 # AI Notes API – Smart Summaries & Sentiment
 
+![CI](https://github.com/fahimakhalifa/ai-notes-api/actions/workflows/ci.yml/badge.svg)
+
 An authenticated notes API with **text summarization** and **sentiment analysis** powered by Hugging Face, plus **background job processing** for long-running ML. Built with **FastAPI + SQLAlchemy + Pydantic v2 + Postgres**.
 
 <p align="center">
