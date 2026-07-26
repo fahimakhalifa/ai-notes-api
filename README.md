@@ -113,7 +113,7 @@ ai-notes-api/
 > Prereqs: Python 3.11, Postgres running locally
 
 ```bash
-git clone <https://github.com/fahimakhalifa/ai-notes-api.git>
+git clone https://github.com/fahimakhalifa/ai-notes-api.git
 cd ai-notes-api
 python -m venv venv
 # Windows:
